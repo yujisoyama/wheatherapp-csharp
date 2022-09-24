@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\weatherapp\\weatherapp\\weatherapp.csproj": {}
+    "D:\\wheatherapp\\weatherapp\\weatherapp.csproj": {}
   },
   "projects": {
-    "D:\\weatherapp\\weatherapp\\weatherapp.csproj": {
+    "D:\\wheatherapp\\weatherapp\\weatherapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\weatherapp\\weatherapp\\weatherapp.csproj",
+        "projectUniqueName": "D:\\wheatherapp\\weatherapp\\weatherapp.csproj",
         "projectName": "weatherapp",
-        "projectPath": "D:\\weatherapp\\weatherapp\\weatherapp.csproj",
+        "projectPath": "D:\\wheatherapp\\weatherapp\\weatherapp.csproj",
         "packagesPath": "C:\\Users\\yujis\\.nuget\\packages\\",
-        "outputPath": "D:\\weatherapp\\weatherapp\\obj\\",
+        "outputPath": "D:\\wheatherapp\\weatherapp\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

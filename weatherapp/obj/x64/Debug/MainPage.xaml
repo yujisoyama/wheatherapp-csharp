@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="weatherapp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:weatherapp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignHeight="1023.739">
+    <Grid>
+        <Grid Background="#0099CC">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+                <TextBlock x:ConnectionId='8' x:Name="txtCity" Text="" FontWeight="SemiBold" FontSize="30" Foreground="White" HorizontalAlignment="Center" />
+                <TextBlock x:ConnectionId='9' x:Name="txtLastUpdate" Text="" FontWeight="SemiBold" FontSize="14" Foreground="White" HorizontalAlignment="Center" />
+            </StackPanel>
+            <ProgressRing x:ConnectionId='2' x:Name="progressRing" Grid.Row="1" IsAccessKeyScope="False" Width="50" Height="50" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Image x:ConnectionId='3' Grid.Row="1" x:Name="imgWeather" IsAccessKeyScope="False" Stretch="Uniform" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <StackPanel Grid.Row="2" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock x:ConnectionId='5' x:Name="txtDescription" Text="" FontWeight="SemiBold" FontSize="30" Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock x:ConnectionId='6' x:Name="txtHumidity" Text="" FontWeight="SemiBold" FontSize="30" Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock x:ConnectionId='7' x:Name="txtTime" Text="" FontWeight="SemiBold" FontSize="30" Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" />
+            </StackPanel>
+            <TextBlock x:ConnectionId='4' x:Name="txtCel" Grid.Row="3" Text="" FontWeight="SemiBold" FontSize="30" Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" />
+        </Grid>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar ClosedDisplayMode="Compact" Background="#344A61" >
+            <AppBarButton x:ConnectionId='10' x:Name="btnGetWeather" Foreground="White" Icon="World" Label="Get Weather"                             />
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+
